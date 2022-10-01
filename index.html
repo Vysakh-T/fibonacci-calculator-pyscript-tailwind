@@ -9,14 +9,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <title>Pyscript Demo</title>
-    <!-- <py-env>
-        - numpy
-    </py-env> -->
 </head>
 
-<body>
+<body class="bg-slate-800 relative">
     <main class="container h-screen m-auto flex flex-col items-center justify-center">
-        <h1 class="text-green-500 text-6xl font-400">Fibonacci<br>Calculator.</h1>
+        <h1 class="text-green-500 text-4xl sm:text-6xl font-bold absolute top-[5%] left-[5%]">Fibonacci<br>Calculator.</h1>
+        <h1 class="text-green-900 text-[100vw] invisible sm:visible text-[15vw] z-[-1] font-bold absolute bottom-0 right-0 opacity-25 leading-none">Fibonacci<br>Calculator.</h1>
+        <div class="relative mt-2 w-4/5 h-1/4 sm:w-3/5 sm:h-1/3 lg:w-2/5 lg:h-1/3 bg-slate-900 rounded-[20px] drop-shadow-[0px_10px_35px_rgba(34,197,94,0.65)]">
+            <input type="text">
+        </div>
         <!-- <div id="output" class="text-3xl text-blue-500"></div>
         <button py-onClick="fib()" id="main-btn" class="mt-4 p-2 text-white bg-blue-600 rounded">Shuffle</button> -->
     </main>

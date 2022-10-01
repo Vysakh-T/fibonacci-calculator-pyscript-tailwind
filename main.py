@@ -1,8 +1,12 @@
-import numpy as np
-import random
-arr = np.array([22,58,57,87,34,5])
-pyscript.write('output', f"{arr}")
+def fib(n, memo={}):
+    if n<=0:
+        return 0
+    if memo.get(n) != None:
+        return memo.get(n)
+    elif n==1 or n==2:
+        memo[n] = 1
+    else:
+        memo[n] = fib(n-1) + fib(n-2)
+    return memo[n]
 
-def shuffle_array(*args):
-    shuffled = sorted(arr, key=lambda k: random.random())
-    pyscript.write('output', f"{shuffled}")
+console.log(fib(10))
