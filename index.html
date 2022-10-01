@@ -9,15 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <title>Pyscript Demo</title>
-    <py-env>
+    <!-- <py-env>
         - numpy
-    </py-env>
+    </py-env> -->
 </head>
 
 <body>
     <main class="container h-screen m-auto flex flex-col items-center justify-center">
-        <div id="output" class="text-3xl"></div>
-        <button py-onClick="shuffle_array()" id="shuffle" class="mt-4 p-2 text-white bg-blue-600 rounded">Shuffle</button>
+        <h1 class="text-green-500 text-6xl font-400">Fibonacci<br>Calculator.</h1>
+        <!-- <div id="output" class="text-3xl text-blue-500"></div>
+        <button py-onClick="fib()" id="main-btn" class="mt-4 p-2 text-white bg-blue-600 rounded">Shuffle</button> -->
     </main>
     <py-script src="./main.py"></py-script>
 </body>
